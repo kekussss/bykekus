@@ -1,0 +1,249 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.headline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(
+        to bottom, 
+        #C9ADFF 0%, 
+        #C9ADFF 92%,  
+        white 100%) ;
+    min-width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.logomargin{
+    margin-left: 40px;
+    height: auto;
+}
+
+.navbar ul{
+    list-style: none;
+    margin-right: 35px;
+    overflow: hidden;
+    display: flex;
+}
+
+.navbar a{
+    color:black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 4px 2px 2px rgba(0, 0, 0, 1);
+    text-wrap: nowrap;
+}
+
+.navbar a:hover{
+    background-color: #AA93D8;
+}
+
+.navbar li{
+    float: left;
+}
+
+.hero{
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-page-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.7;
+}
+.gradient-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(255,255,255,1) 1%,
+        rgba(255,255,255, 0) 15%,
+        rgba(255,255,255, 0) 85%,
+        rgba(255,255,255,1) 99%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.article-block{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 3;
+}
+
+.article-block h1{
+    font-size: 44px;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.article-block p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.article-block a{
+    color: #6610F2;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 40px;
+    text-decoration: none;
+    text-shadow: 2px 0px 2px rgba(82, 14, 201, 0.25);
+}
+
+@media (max-width: 768px) {
+    .headline {
+        padding: 10px 0; /* Добавляем отступы */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logomargin {
+        margin-left: 0; /* Уменьшаем отступ */
+        width: 90px; /* Уменьшаем логотип */
+    }
+    
+    .navbar ul {
+        margin-right: 0; 
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .navbar a {
+        padding: 8px 10px; /* Уменьшаем padding */
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        text-wrap: nowrap;
+    }
+
+    .article-block{
+        text-wrap: wrap;
+        white-space: normal;
+    }
+    
+    .article-block h1 {
+        font-size: 26px; /* Уменьшаем заголовок */
+    }
+    
+    .article-block p {
+        font-size: 16px; /* Уменьшаем текст */
+        line-height: 28px;
+    }
+    
+    .article-block a {
+        font-size: 18px; /* Уменьшаем ссылку */
+        padding-top: 30px;
+    }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+    .headline {
+        padding: 15px 0;
+    }
+    
+    .logomargin {
+        margin-left: 20px;
+        width: 80px;
+    }
+    
+    .navbar ul {
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    .navbar a {
+        padding: 6px 6px;
+        font-size: 14px;
+    }
+    
+    .image-container {
+        margin-top: 15px;
+    }
+    
+    .article-block {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-wrap: wrap; /* Разрешаем перенос текста */
+    }
+    
+    .article-block h1 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    
+    .article-block p {
+        font-size: 10px;
+        line-height: 1.5;
+        text-wrap: wrap; /* Разрешаем перенос текста */
+    }
+    
+    .article-block a {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    
+    /* Упрощаем градиент для мобильных */
+    .gradient-overlay {
+        background: linear-gradient(
+            rgba(255,255,255,1) 2%,
+            rgba(255,255,255, 0) 10%,
+            rgba(255,255,255, 0) 90%,
+            rgba(255,255,255,1) 98%
+        );
+    }
+}
+
+/* Очень маленькие экраны (320px и меньше) */
+@media (max-width: 320px) {
+    .navbar a {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    
+    .article-block h1 {
+        font-size: 14px;
+    }
+    
+    .article-block p {
+        font-size: 8px;
+    }
+    
+    .article-block a {
+        font-size: 10px;
+    }
+}
+
+/* Плавные переходы для всех интерактивных элементов */
+.navbar a, .article-block a {
+    transition: all 0.3s ease;
+}
