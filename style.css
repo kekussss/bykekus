@@ -150,8 +150,8 @@ body{
 
 /* Текстовый блок в главном блоке */
 .article-block{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -994,7 +994,8 @@ body{
     }
     
     .about-hero{
-        margin: 50px 5% 50px;
+        width: 640px;
+        margin: 50px auto 50px;
         gap: 60px;
     }
 
@@ -1179,8 +1180,9 @@ body{
     }
 
     .about-hero{
-        margin: 50px 5% 50px;
-        gap: 40px;
+        margin: 40px auto 30px;
+        width: 460px;
+        gap: 20px;
     }
 
     .about-hero p{
@@ -1188,7 +1190,7 @@ body{
     }
 
     .image-with-caption img{
-        width: 168px;
+        width: 240px;
     }
 
     .image-with-caption p{
@@ -1373,9 +1375,9 @@ body{
     }
 
     .about-hero{
-        margin: 40px 5% 25px;
-        gap: 25px;
-        flex-direction: column;
+        margin: 30px auto 30px;
+        width: 300px;
+        gap: 20px;
     }
 
     .about-hero p{
@@ -1538,5 +1540,11 @@ body{
 
     .music-media-logo{
         width: 24px;
+    }
+
+    .about-hero{
+        margin: 25px auto 30px;
+        width: 250px;
+        gap: 25px;
     }
 }
