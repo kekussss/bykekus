@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head> 
+    <!--Мета-данные--> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная</title>
+        <title>Gorillaz - BY/KEKUS</title>
         <link rel="stylesheet" href="../style.css">
         <script src="../script.js"></script>
     </head>
     <body>
-        <div class="header header--articles">
+        <!--Шапка сайта-->
+        <header class="header header--articles">
             <a href="../index.html" target="_self"><img src="../images/logo.png" alt="by kekus logo" class="logo-style"></a>
+            <!--Кнопки навигации по сайту-->
             <nav class="navbar">
                 <ul>
                     <li><a href="../index.html">Главная</a></li>
@@ -17,8 +20,9 @@
                     <li><a href="../about.html">О блоге</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
         
+        <!--Шапка страницы, содержащая заголовок-->
         <div class="hero">
             <div class="hero-image-container hero-image-container--articles">
                 <img src="../images/gorillaz_2001_article_header.png" alt="gorillaz" class="hero-image hero-image--articles"> 
@@ -27,7 +31,8 @@
             </div>
         </div>
 
-        <div class="article-body">
+        <!--Основной блок статьи-->
+        <main class="article-body">
             <p class="caption-text">Опубликовано: 5 сентября, 2025 года, 21:10</p>
             <p>
                 Помните тот самый гипнотизирующий бас из «Clint Eastwood»? В начале нулевых
@@ -58,30 +63,36 @@
                 доказав, что мейнстрим готов к экспериментам. Они были и остаются 
                 символом эры виртуальных аватаров, изменив музыку навсегда.
             </p>
+            <!--Ссылки на исполнителей-->
             <div class="music-media-links">
                 <a href="https://music.yandex.ru/album/41742" target="_blank"><img src="../images/music-yandex_logo_x128.png" class="music-media-logo"></a>
                 <a href="https://open.spotify.com/album/0YvYmLBFFwYxgI4U9KKgUm" target="_blank"><img src="../images/spotify_logo_x128_red.png" class="music-media-logo"></a>
                 <a href="https://www.youtube.com/playlist?list=PLxzSZG7g8c8zw_bH8z12cBErN-CVzSRRP" target="_blank"><img src="../images/youtube_logo_x128_red.png" class="music-media-logo"></a>
             </div>
             <p class="caption-text">Перейти к альбому Gorillaz - 2001</p>
-        </div>
+        </main>
 
-        <div class="bottom-bar">
+        <!--Футер-->
+        <footer class="bottom-bar">
+            <!--Блок авторства и копирайт-->
             <p>made by <span class="kekusss-class">kekussss</span><br>
-                <span class="year-text">2025. А это копирайт. ©</span></p>
+                <span class="year-text">&copy; 2025. А это копирайт.</span></p>
+            <!--Ссылки на социальные сети-->
             <div class="social-media-links">
-                <a href="https://t.me/baddestguy" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/telegram_logo_x96.png" alt="Telegram" class="social-media-logo">
+                <!--Telegram-->
+                <a href="https://t.me/baddestguy" target="_blank" rel="noopener noreferrer" aria-label="Перейти в Telegram">
+                    <img src="../images/telegram_logo_x96.png" alt="Telegram" class="social-media-logo">
                 </a>
-
+                <!--YouTube-->
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/youtube_logo_x96.png" alt="YouTube" class="social-media-logo">
+                    <img src="../images/youtube_logo_x96.png" alt="YouTube" class="social-media-logo">
                 </a>
-
+                <!--WhatsApp-->
                 <a href="https://wa.me/79086871370" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/whatsapp_logo_x96.png" alt="WhatsApp" class="social-media-logo">
+                    <img src="../images/whatsapp_logo_x96.png" alt="WhatsApp" class="social-media-logo">
                 </a>
             </div>
-        </div>
+        </footer>
+
     </body>
 </html>

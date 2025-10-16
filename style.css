@@ -8,6 +8,11 @@
     font-display: swap;
 }
 
+/* Для всей страницы определяем гладкое поведение скролла */
+html{
+    scroll-behavior: smooth;
+}
+
 /* Параметры для всего блока */
 body{
     margin: 0px;

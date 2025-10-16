@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head> 
+    <!--Мета-данные--> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная</title>
+        <title>О блоге - BY/KEKUS</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js"></script>
     </head>
     <body>
-        <div class="header header--articles">
-            <a href="./index.html"><img src="./images/logo.png" alt="by kekus logo" class="logo-style"></a>
+        <!--Шапка сайта-->
+        <header class="header header--articles">
+            <a href="./index.html" target="_self"><img src="./images/logo.png" alt="by kekus logo" class="logo-style"></a>
+            <!--Кнопки навигации по сайту-->
             <nav class="navbar">
                 <ul>
                     <li><a href="./index.html">Главная</a></li>
@@ -17,8 +20,9 @@
                     <li><a href="./about.html">О блоге</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
 
+        <!--Шапка страницы, содержащая заголовок-->
         <div class="hero">
             <div class="hero-image-container hero-image-container--articles">
                 <img src="./images/about_header.png" alt="about" class="hero-image hero-image--articles"> 
@@ -27,6 +31,7 @@
             </div>
         </div>
 
+        <!--Блок информации об авторе-->
         <div class="about-hero">
             <p>
                 <b>by/kekus</b> - блог одного музыкального любителя, который очень
@@ -39,6 +44,7 @@
             </div>
         </div>
 
+        <!--Цитата автора блока-->
         <div class="quote-block">
             <div class="color-underlay"></div>
             <p class="quote-text">
@@ -49,8 +55,10 @@
             </p>
         </div>
 
+        <!--Блок обратной связи-->
         <div class="contact-me-block">
             <p>Хотите связаться с нами?</p>
+            <!--Форма для связи включает в себя поле для ввода E-mail и сообщения, а также кнопку "Отправить"-->
             <form class="contact-form">
                 <div class="form-group">
                     <label for="email-box">E-mail:</label>
@@ -67,23 +75,27 @@
             </form>
         </div>
 
-        <div class="bottom-bar">
+        <!--Футер-->
+        <footer class="bottom-bar">
+            <!--Блок авторства и копирайт-->
             <p>made by <span class="kekusss-class">kekussss</span><br>
-                <span class="year-text">2025. А это копирайт. ©</span></p>
+                <span class="year-text">&copy; 2025. А это копирайт.</span></p>
+            <!--Ссылки на социальные сети-->
             <div class="social-media-links">
-                <a href="https://t.me/baddestguy" target="_blank" rel="noopener noreferrer">
+                <!--Telegram-->
+                <a href="https://t.me/baddestguy" target="_blank" rel="noopener noreferrer" aria-label="Перейти в Telegram">
                     <img src="./images/telegram_logo_x96.png" alt="Telegram" class="social-media-logo">
                 </a>
-
+                <!--YouTube-->
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
                     <img src="./images/youtube_logo_x96.png" alt="YouTube" class="social-media-logo">
                 </a>
-
+                <!--WhatsApp-->
                 <a href="https://wa.me/79086871370" target="_blank" rel="noopener noreferrer">
                     <img src="./images/whatsapp_logo_x96.png" alt="WhatsApp" class="social-media-logo">
                 </a>
             </div>
-        </div>
+        </footer>
 
     </body>
 </html>
