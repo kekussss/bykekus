@@ -1237,6 +1237,16 @@ body{
         padding: 4px 4px;
         font-size: 12px;
     }
+
+    .hero-image--top{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .hero-image--bottom{
+        opacity: 1;
+        transform: translateY(0);
+    }
     
     .image-container {
         margin-top: 15px;
